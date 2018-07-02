@@ -2,6 +2,16 @@
 
 Arduino Library derived from [joekickass/esp8266-arduino-aws-iot-ws](https://github.com/joekickass/esp8266-arduino-aws-iot-ws) to work with Arduino
 
+## Dependencies
+
+| Library                   | Link                                                            | Use                 |
+|---------------------------|-----------------------------------------------------------------|---------------------|
+|arduinoWebSockets          |https://github.com/Links2004/arduinoWebSockets                   |websocket comm impl  |
+|PahoMQTT                   |https://projects.eclipse.org/projects/technology.paho/downloads  |mqtt comm impl       |
+
+
+## Headers from [joekickass/esp8266-arduino-aws-iot-ws](https://github.com/joekickass/esp8266-arduino-aws-iot-ws)
+
 Library for connecting to the AWS IoT service from an ESP8266 using websockets. Authenticates using AWS IAM credentials and sigV4.
 
 Based on the work of [AWS labs](https://github.com/awslabs/aws-sdk-arduino), basically using its SigV4 implementation and a fork by [Sander van de Graaf](https://github.com/svdgraaf/aws-sdk-arduino). The fork is reflected in [the License](LICENSE).

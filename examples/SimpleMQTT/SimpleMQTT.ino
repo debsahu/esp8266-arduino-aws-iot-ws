@@ -1,6 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>          //https://github.com/bblanchon/ArduinoJson (use v6.xx)
 #include <ESP8266AWSIoTMQTTWS.h>  //https://github.com/debsahu/esp8266-arduino-aws-iot-ws
+                                  //https://github.com/Links2004/arduinoWebSockets
+                                  //https://projects.eclipse.org/projects/technology.paho/downloads (download Arduino version)
 
 const char *ssid = "WIFI_SSID";
 const char *password = "WIFI_PASSWORD";
