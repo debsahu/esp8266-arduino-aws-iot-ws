@@ -1,0 +1,33 @@
+{
+  "name": "AWS IoT ESP8266 Arduino Websockets",
+  "keywords": "AWS, IoT, SDK, ESP8266, Websockets, sigv4, Arduino",
+  "description": "AWS IoT Device SDK for ESP8266/Arduino using Websockets and sigv4 authentication.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/debsahu/esp8266-arduino-aws-iot-ws"
+  },
+  "version": "0.1.4",
+  "frameworks": "arduino",
+  "platforms": "espressif8266",
+  "dependencies": [
+    {
+      "name": "Paho",
+      "authors": "Eclipse",
+      "frameworks": "arduino",
+      "platforms": "*"
+    },
+    {
+      "name": "WebSockets",
+      "authors": "Markus Sattler",
+      "frameworks": "arduino",
+      "platforms": "*"
+    },
+    {
+      "name": "jsmn",
+      "authors": "Serge Zaitsev",
+      "frameworks": "*",
+      "platforms": "*"
+    }
+  ]
+}
