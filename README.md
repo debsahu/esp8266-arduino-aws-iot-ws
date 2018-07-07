@@ -2,6 +2,8 @@
 
 Arduino Library derived from [joekickass/esp8266-arduino-aws-iot-ws](https://github.com/joekickass/esp8266-arduino-aws-iot-ws) to work with Arduino
 
+[![ESP8266 Amazon IoT](https://img.youtube.com/vi/AiCa6E_DBL8/0.jpg)](https://www.youtube.com/watch?v=AiCa6E_DBL8)
+
 ## Dependencies
 
 | Library                   | Link                                                            | Use                 |
