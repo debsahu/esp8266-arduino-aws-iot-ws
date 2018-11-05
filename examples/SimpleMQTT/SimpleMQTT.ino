@@ -53,16 +53,16 @@ void setup() {
 void loop() {
   if (client.isConnected()) {
     DynamicJsonDocument jsonBuffer;
-    JsonObject& root = jsonBuffer.to<JsonObject>();
-    JsonObject& state = root.createNestedObject("state");
-    JsonObject& state_reported = state.createNestedObject("reported");
+    JsonObject root = jsonBuffer.to<JsonObject>();
+    JsonObject state = root.createNestedObject("state");
+    JsonObject state_reported = state.createNestedObject("reported");
     state_reported["value"] = random(100);
     serializeJson(root, Serial);
     Serial.println();
-    String shadow;
-    serializeJson(root, shadow);
+    char shadow[measureJson(root) + 1];
+    serializeJson(root, shadow, sizeof(shadow));
 
-    client.publish(aws_topic, shadow.c_str(), 0, false);
+    client.publish(aws_topic, shadow, 0, false);
     client.yield();
 
   } else {
