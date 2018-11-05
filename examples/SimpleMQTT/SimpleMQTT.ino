@@ -16,6 +16,10 @@ char *iamKeyId = (char *) "yyyyyyyyyyyyyyyyyy";
 char *iamSecretKey = (char *) "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY";
 const char* aws_topic  = "$aws/things/ZZZZZZZZZZZZ/shadow/update";
 
+#if !(ARDUINOJSON_VERSION_MAJOR == 6 and ARDUINOJSON_VERSION_MINOR == 5)
+  #error "Install ArduinoJson v6.5.0-beta"
+#endif
+
 ESP8266DateTimeProvider dtp;
 AwsIotSigv4 sigv4(&dtp, region, endpoint, mqttHost, mqttPort, iamKeyId, iamSecretKey);
 AWSConnectionParams cp(sigv4);
