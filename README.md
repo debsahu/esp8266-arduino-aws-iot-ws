@@ -1,5 +1,8 @@
 # AWS IoT Websockets
 
+---------------------------------------------
+:warning: :warning: :warning: **This is no longer maintained and obsolete, there is better way to do this: [follow instructions from here](https://github.com/debsahu/ESP-MQTT-AWS-IoT-Core) Still want to use this, follow instructions below** :warning: :warning: :warning:
+---------------------------------------------
 Arduino Library derived from [joekickass/esp8266-arduino-aws-iot-ws](https://github.com/joekickass/esp8266-arduino-aws-iot-ws) to work with Arduino
 
 [![ESP8266 Amazon IoT](https://img.youtube.com/vi/AiCa6E_DBL8/0.jpg)](https://www.youtube.com/watch?v=AiCa6E_DBL8)
